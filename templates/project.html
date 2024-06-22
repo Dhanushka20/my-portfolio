@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% block content %}
+  <h1>{{ project.title }}</h1>
+  <p>{{ project.description }}</p>
+  {% if project.link %}
+    <a href="{{ project.link }}">Project Link</a>
+  {% endif %}
+{% endblock %}
